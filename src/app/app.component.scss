@@ -25,7 +25,7 @@ $md-break-point: 991px;
     &-heading {
         text-align: center;
         height: 100vh;
-        background-color: #6d9aa2;
+        background-color: #0d60cc;
         padding: 32px;
         box-sizing: border-box;
         display: flex;
@@ -64,6 +64,21 @@ $md-break-point: 991px;
            overflow: auto;
             height: calc(100vh - 110px);
             justify-content: initial;
+            h1 {
+                font-size: 26px !important;
+                color: white;
+                height: fit-content;
+                margin: 0;
+                border-bottom: none;
+                padding-bottom: 0;
+                margin-bottom: 12px;
+            }
+    
+            h3 {
+                font-size: 18px !important;
+                border-bottom: 2px solid #ffbb02;
+                padding-bottom: 12px;
+            }
         }
     }
 
@@ -75,7 +90,6 @@ $md-break-point: 991px;
     &-info {
         text-align: center;
         font-size: 18px;
-        font-family: monospace;
         color: white;
         margin-bottom: 10px;
         overflow-wrap: anywhere;
