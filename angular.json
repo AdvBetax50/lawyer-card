@@ -34,8 +34,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -126,6 +125,10 @@
               "devServerTarget": "lawyer-dash:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

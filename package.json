@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href=/angular-ci-cd/"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -22,10 +23,12 @@
     "@angular/router": "~11.2.10",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "bootstrap": "^5.0.2",
+    "lite-server": "^2.6.1",
     "ngx-bootstrap": "^6.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "gh-pages": "^3.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.9",
@@ -33,6 +36,7 @@
     "@angular/compiler-cli": "~11.2.10",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.2",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
