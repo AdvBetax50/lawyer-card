@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "force-deploy": "git add . && git commit -m 'automatic deploy' && git push && ng build && firebase deploy"
   },
   "private": true,
   "dependencies": {

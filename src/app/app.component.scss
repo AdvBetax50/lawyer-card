@@ -34,7 +34,7 @@ $md-break-point: 991px;
         align-items: center;
 
         @media (max-width: $md-break-point) { 
-            h1 {
+            h2 {
                 font-size: 32px !important;
             }
 
@@ -43,7 +43,7 @@ $md-break-point: 991px;
             }
         }
 
-        h1 {
+        h2 {
             font-size: 48px;
             color: white;
             height: fit-content;
@@ -63,7 +63,7 @@ $md-break-point: 991px;
            overflow: auto;
             height: calc(100vh - 110px);
             justify-content: initial;
-            h1 {
+            h2 {
                 font-size: 26px !important;
                 color: white;
                 height: fit-content;
